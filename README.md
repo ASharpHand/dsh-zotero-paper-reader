@@ -28,7 +28,11 @@ Zotero 不允许外部程序自动安装插件，这一步**必须手动做**：
 
 ### 3. 笔记功能的额外依赖
 
-Python + PyMuPDF（`pip install pymupdf`）和 Edge/Chrome；缺了不影响浏览、翻译、问答。
+第一次生成笔记时插件会自己检查：如果当前 Python 里没有 PyMuPDF，就新建一个专用虚拟环境（`~/.dsh/paper-reader/venv`）并在里面安装，以后笔记用到的 Python 依赖都放这个环境，不动系统 Python。探测顺序是：配置项 `python` → 这个专用环境 → 阅读技能的 venv → 系统 `python`/`py`。
+
+- 机器上完全没有 Python 时会提示先装 Python（3.8+），虚拟环境建不起来。
+- 网络慢可以设 `pipIndex`（例如 `https://pypi.tuna.tsinghua.edu.cn/simple`），默认会自动重试清华镜像。
+- 打印 PDF 需要 Edge/Chrome；缺了只影响生成 PDF，不影响浏览、翻译、问答。
 
 ## 依赖
 
@@ -122,7 +126,9 @@ Zotero 10 的本地 API 只读，写附件必须走一条本地通道。这个�
 | `zoteroDataDir` | 自动解析 | Zotero 数据目录 |
 | `outputDir` | `<包目录>\data\notes` | 笔记输出目录 |
 | `skillDir` | `~\.codex\skills\remote-sensing-paper-brief`（可选） | 技能目录，找不到就用内置结构 |
-| `python` | 技能 venv | 抽取 PDF 用的解释器 |
+| `python` | 自动探测 | 抽取 PDF 用的解释器；留空则按 专用环境 → 技能 venv → 系统 python 的顺序找 |
+| `autoVenv` | `true` | 没有 PyMuPDF 时自动建 `~/.dsh/paper-reader/venv` 并安装 |
+| `pipIndex` | 空（失败时自动试清华镜像） | pip 源，例如 `https://pypi.tuna.tsinghua.edu.cn/simple` |
 | `browser` | 自动探测 Edge/Chrome | 打印 PDF 用 |
 | `notesMaxTokens` | `32000` | 笔记生成的输出上限 |
 | `translateEngine` | `free` | 默认翻译通道（`free` 免费通道 / `llm` DSH 模型） |
