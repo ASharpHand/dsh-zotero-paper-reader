@@ -58,12 +58,12 @@
       },
       "versions": [
         {
-          "version": "1.1.0",
-          "publishTimestamp": 1794384533,
+          "version": "1.1.1",
+          "publishTimestamp": 1794384697,
           "source": {
             "type": "git",
             "url": "https://github.com/ASharpHand/dsh-paper-reader",
-            "commit": "f29f5fd04ffd24e36be36adc00464f6fdac017ec"
+            "commit": "a7ab4601d471864d73d2ce5e178dda6f9baca3fe"
           }
         }
       ]
