@@ -38,10 +38,10 @@
         "zh": "浏览 Zotero 文献库、原位读 PDF 并替换成中文、划词提问、生成笔记 PDF 并回写 Zotero。"
       },
       "author": "<你的名字>",
-      "homepage": "https://github.com/ASharpHand/dsh-paper-reader",
+      "homepage": "https://github.com/ASharpHand/dsh-zotero-paper-reader",
       "repository": {
         "type": "git",
-        "url": "https://github.com/ASharpHand/dsh-paper-reader.git"
+        "url": "https://github.com/ASharpHand/dsh-zotero-paper-reader.git"
       },
       "metadata": {
         "category": "research",
@@ -62,7 +62,7 @@
           "publishTimestamp": 1794384697,
           "source": {
             "type": "git",
-            "url": "https://github.com/ASharpHand/dsh-paper-reader",
+            "url": "https://github.com/ASharpHand/dsh-zotero-paper-reader",
             "commit": "a7ab4601d471864d73d2ce5e178dda6f9baca3fe"
           }
         }

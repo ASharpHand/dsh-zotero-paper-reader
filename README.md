@@ -7,7 +7,7 @@
 ### 1. 装到 DSH
 
 ```
-dsh plugin install github:ASharpHand/dsh-paper-reader
+dsh plugin install github:ASharpHand/dsh-zotero-paper-reader
 # 或本地 tarball：
 dsh plugin install "<绝对路径>\paper-reader-1.1.1.tgz"
 ```
