@@ -11,12 +11,18 @@
   "metadata": {
     "categories": {
       "research": {
-        "title": { "en": "Research", "zh": "科研" }
+        "title": {
+          "en": "Research",
+          "zh": "科研"
+        }
       }
     },
     "labels": {
       "zotero": {
-        "title": { "en": "Zotero", "zh": "Zotero" }
+        "title": {
+          "en": "Zotero",
+          "zh": "Zotero"
+        }
       }
     }
   },
@@ -32,24 +38,32 @@
         "zh": "浏览 Zotero 文献库、原位读 PDF 并替换成中文、划词提问、生成笔记 PDF 并回写 Zotero。"
       },
       "author": "<你的名字>",
-      "homepage": "https://github.com/<user>/<repo>",
+      "homepage": "https://github.com/ASharpHand/dsh-paper-reader",
       "repository": {
         "type": "git",
-        "url": "https://github.com/<user>/<repo>.git"
+        "url": "https://github.com/ASharpHand/dsh-paper-reader.git"
       },
       "metadata": {
         "category": "research",
-        "labels": ["zotero"],
-        "keywords": ["zotero", "pdf", "translation", "paper", "notes"]
+        "labels": [
+          "zotero"
+        ],
+        "keywords": [
+          "zotero",
+          "pdf",
+          "translation",
+          "paper",
+          "notes"
+        ]
       },
       "versions": [
         {
           "version": "1.1.0",
-          "publishTimestamp": 1762828800,
+          "publishTimestamp": 1794384533,
           "source": {
             "type": "git",
-            "url": "https://github.com/<user>/<repo>",
-            "commit": "<40 位 commit sha>"
+            "url": "https://github.com/ASharpHand/dsh-paper-reader",
+            "commit": "f29f5fd04ffd24e36be36adc00464f6fdac017ec"
           }
         }
       ]
