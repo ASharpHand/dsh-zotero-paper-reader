@@ -6,9 +6,9 @@
 
 ## 可直接粘贴的指令
 
-> 帮我安装论文阅读插件，仓库是 `<你的 GitHub 仓库地址>`：
+> 帮我安装论文阅读插件，仓库是 `https://github.com/ASharpHand/dsh-paper-reader`：
 >
-> 1. 执行 `dsh plugin install github:<user>/<repo>`，装完确认 profile 的 `dsh.profile.bundles` 里有 `@local/dsh-paper-reader`，然后重启 DSH。
+> 1. 执行 `dsh plugin install github:ASharpHand/dsh-paper-reader`，装完确认 profile 的 `dsh.profile.bundles` 里有 `@local/dsh-paper-reader`，然后重启 DSH。
 > 2. 从该仓库下载 `paper-reader-bridge.xpi`，装进 Zotero：
 >    - 先试 `工具 → 插件 → 从文件安装插件` 选这个 xpi，然后重启 Zotero；
 >    - 如果重启后插件消失，完全退出 Zotero，运行仓库里的 `install-zotero-addon.py`，再启动 Zotero。

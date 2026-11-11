@@ -1,4 +1,4 @@
-﻿# 论文阅读模块（@local/dsh-paper-reader）
+# 论文阅读模块（@local/dsh-paper-reader）
 
 在 Harness Web 界面里读 Zotero 文献：浏览文献库、原位看 PDF、把英文替换成中文、划词向 DSH 提问、生成笔记 PDF 并回写 Zotero 附件。装好后侧边栏会多出一个「论文」图标。
 
@@ -8,13 +8,13 @@
 
 ```
 # GitHub（把 user/repo 换成你的仓库）
-dsh plugin install github:user/repo
+dsh plugin install github:ASharpHand/dsh-paper-reader
 
 # 本地 tarball
 dsh plugin install "<绝对路径>\paper-reader-1.0.0.tgz"
 ```
 
-   也可以在 DSH 侧边栏「插件 → 安装组合包」里填 tarball 路径或 `github:user/repo`。安装后确认 `@local/dsh-paper-reader` 已启用，侧边栏出现「论文」。
+   也可以在 DSH 侧边栏「插件 → 安装组合包」里填 tarball 路径或 `github:ASharpHand/dsh-paper-reader`。安装后确认 `@local/dsh-paper-reader` 已启用，侧边栏出现「论文」。
 
 2. 安装 Zotero 桥接插件（见下文「Zotero 桥接插件」）。只读文献、看 PDF、翻译、问答不需要它；把生成的笔记写成 Zotero 附件才需要。
 
