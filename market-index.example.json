@@ -58,12 +58,12 @@
       },
       "versions": [
         {
-          "version": "1.1.2",
-          "publishTimestamp": 1794404849,
+          "version": "1.2.0",
+          "publishTimestamp": 1794405217,
           "source": {
             "type": "git",
             "url": "https://github.com/ASharpHand/dsh-zotero-paper-reader",
-            "commit": "4c50f754d67cfc90aa1b3ea686d34b46c6927633"
+            "commit": "09e680d833787a7049045032dd7dd679c6d35fd9"
           }
         }
       ]
