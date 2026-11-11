@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Paper Reader Bridge",
+  "version": "2.1.0",
+  "description": "Local loopback bridge used by the DSH paper reading module to attach generated note PDFs to Zotero items.",
+  "author": "DSH paper reader",
+  "icons": {
+    "48": "icon-48.png",
+    "96": "icon-96.png"
+  },
+  "applications": {
+    "zotero": {
+      "id": "paper-reader-bridge@dsh.local",
+      "update_url": "https://example.invalid/paper-reader-bridge/updates.json",
+      "strict_min_version": "10.0",
+      "strict_max_version": "11.*"
+    }
+  }
+}

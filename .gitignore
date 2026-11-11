@@ -1,0 +1,7 @@
+﻿# runtime data
+data/
+dist/
+# local artefacts
+node_modules/
+*.bak
+*.log

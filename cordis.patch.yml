@@ -1,0 +1,10 @@
+- insert:
+    - id: paper-reader
+      name: '@local/dsh-paper-reader'
+      config: {}
+    # Anonymous Bing/Google translation service used by the reader's free channel.
+    # It is the shipped translator Host row only; the experimental chat UI is not enabled.
+    - id: paper-reader-translator
+      name: '@deepseek-ai/dsh-experimental-translator'
+      config:
+        provider: bing

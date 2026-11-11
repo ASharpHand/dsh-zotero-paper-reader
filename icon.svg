@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Paper reading">
+  <defs>
+    <linearGradient id="pr-cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6f8f"/>
+      <stop offset="1" stop-color="#1d4d64"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="13" fill="url(#pr-cover)"/>
+  <path d="M17 15h16.5A5.5 5.5 0 0 1 39 20.5V46H22.5A5.5 5.5 0 0 1 17 40.5z" fill="#ffffff" opacity="0.94"/>
+  <path d="M39 22h4.5A4.5 4.5 0 0 1 48 26.5V42a5 5 0 0 1-5 5h-4" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
+  <g stroke="#2f6f8f" stroke-width="2.4" stroke-linecap="round">
+    <path d="M22 24h11"/>
+    <path d="M22 30h11"/>
+    <path d="M22 36h7"/>
+  </g>
+  <circle cx="43" cy="40" r="7.5" fill="none" stroke="#8fd0e8" stroke-width="2.8"/>
+  <path d="M48.5 45.5 53 50" stroke="#8fd0e8" stroke-width="3" stroke-linecap="round"/>
+</svg>

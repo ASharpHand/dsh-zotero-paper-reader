@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "论文阅读",
+    "description": "在 Harness 里浏览 Zotero 文献库、原位阅读 PDF 并把英文替换为中文、划词向 DSH 提问，并生成笔记 PDF 回写到 Zotero 条目附件。"
+  }
+}
