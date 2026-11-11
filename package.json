@@ -1,6 +1,6 @@
 {
   "name": "@local/dsh-paper-reader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "type": "module",
   "description": "Zotero library browser and PDF reading workspace for the Harness Web UI",
@@ -36,5 +36,6 @@
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
     }
-  }
+  },
+  "license": "MIT"
 }

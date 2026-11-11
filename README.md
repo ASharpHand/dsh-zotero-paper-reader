@@ -4,21 +4,31 @@
 
 ## 安装
 
-1. 安装到 DSH（任选其一）：
+### 1. 装到 DSH
 
 ```
-# GitHub（把 user/repo 换成你的仓库）
 dsh plugin install github:ASharpHand/dsh-paper-reader
-
-# 本地 tarball
-dsh plugin install "<绝对路径>\paper-reader-1.0.0.tgz"
+# 或本地 tarball：
+dsh plugin install "<绝对路径>\paper-reader-1.1.1.tgz"
 ```
 
-   也可以在 DSH 侧边栏「插件 → 安装组合包」里填 tarball 路径或 `github:ASharpHand/dsh-paper-reader`。安装后确认 `@local/dsh-paper-reader` 已启用，侧边栏出现「论文」。
+也可以在 DSH 侧边栏「插件 → 安装组合包」里填同样的地址。装完重启 DSH，确认 `@local/dsh-paper-reader` 已启用，侧边栏出现「论文」。
 
-2. 安装 Zotero 桥接插件（见下文「Zotero 桥接插件」）。只读文献、看 PDF、翻译、问答不需要它；把生成的笔记写成 Zotero 附件才需要。
+### 2. 手动在 Zotero 里装桥接插件（需要你操作一次）
 
-3. 生成笔记需要额外依赖：Python + PyMuPDF（`pip install pymupdf`）和 Edge/Chrome。只读、翻译、问答不需要。
+Zotero 不允许外部程序自动安装插件，这一步**必须手动做**：
+
+1. 打开 Zotero → `工具 → 插件` → 右上角齿轮 → `Install Plugin From File…`
+2. 选择仓库根目录的 **`paper-reader-bridge.xpi`**
+3. 重启 Zotero
+4. 重启后插件列表里若没有 “Paper Reader Bridge”（部分版本会丢弃未签名插件）：
+   完全退出 Zotero → 运行 `python install-zotero-addon.py` → 再启动 Zotero
+
+只读文献、看 PDF、翻译、问答**不需要**这一步；只有把生成的笔记写成 Zotero 附件才需要。
+
+### 3. 笔记功能的额外依赖
+
+Python + PyMuPDF（`pip install pymupdf`）和 Edge/Chrome；缺了不影响浏览、翻译、问答。
 
 ## 依赖
 
@@ -137,3 +147,7 @@ Zotero 10 的本地 API 只读，写附件必须走一条本地通道。这个�
 
 - 语法检查：`node --check index.js lib\*.js client.js`
 - 重新打包桥接插件：把 `zotero-bridge\` 下两个文件压成 zip，改名 `.xpi`
+
+## 许可证
+
+MIT，见 [LICENSE](LICENSE)。
