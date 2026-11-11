@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Paper reader plugins",
+    "zh": "论文阅读插件"
+  },
+  "description": {
+    "en": "Self-hosted index for the DSH paper reader module",
+    "zh": "论文阅读模块的自建索引"
+  },
+  "metadata": {
+    "categories": {
+      "research": {
+        "title": {
+          "en": "Research",
+          "zh": "科研"
+        }
+      }
+    },
+    "labels": {
+      "zotero": {
+        "title": {
+          "en": "Zotero",
+          "zh": "Zotero"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@local/dsh-paper-reader",
+      "title": {
+        "en": "Paper Reader",
+        "zh": "论文阅读"
+      },
+      "description": {
+        "en": "Browse a Zotero library, read PDFs in place with inline translation, ask questions about a selection, and generate note PDFs back into Zotero.",
+        "zh": "浏览 Zotero 文献库、原位读 PDF 并替换成中文、划词提问、生成笔记 PDF 并回写 Zotero。"
+      },
+      "author": "<你的名字>",
+      "homepage": "https://github.com/ASharpHand/dsh-zotero-paper-reader",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/ASharpHand/dsh-zotero-paper-reader.git"
+      },
+      "metadata": {
+        "category": "research",
+        "labels": [
+          "zotero"
+        ],
+        "keywords": [
+          "zotero",
+          "pdf",
+          "translation",
+          "paper",
+          "notes"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.2.0",
+          "publishTimestamp": 1794405217,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/ASharpHand/dsh-zotero-paper-reader",
+            "commit": "09e680d833787a7049045032dd7dd679c6d35fd9"
+          }
+        }
+      ]
+    }
+  ]
+}
